@@ -1,16 +1,16 @@
 //: [Previous](@previous)
 import UIKit
 
-//func imageFor(_ str: String) -> UIImage {
-//    let url = URL(string: str)
-//    let imgData = try? Data(contentsOf: url!)
-//    let uiImage = UIImage(data:imgData!)
-//    return uiImage!
-//}
-//
-//let url1 = "https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg"
+func imageFor(_ str: String) -> UIImage {
+    let url = URL(string: str)
+    let imgData = try? Data(contentsOf: url!)
+    let uiImage = UIImage(data:imgData!)
+    return uiImage!
+}
 
-let img1 = "nebula.jpg"
+let url1 = "https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg"
+
+let img1 = imageFor(url1)
 
 let imgSize = CGSize(width: 1024, height: 1024)
 let imgRenderer = UIGraphicsImageRenderer(size: imgSize)
