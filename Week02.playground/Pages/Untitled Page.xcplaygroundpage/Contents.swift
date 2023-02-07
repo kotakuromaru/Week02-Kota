@@ -8,15 +8,15 @@ struct ContentView: View {
         
         beach
             .resizable()
-            .scaledToFit()
-            .frame(width: 1024, height: 1024, alignment: .top)
-        
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 200, height: 200, alignment: .topLeading)
+            .clipped()
     }
 }
 
 PlaygroundPage.current.setLiveView(
   ContentView()
-    .frame(width: 1024, height: 1024)
+    .frame(width: 200, height: 200)
 )
 
 
