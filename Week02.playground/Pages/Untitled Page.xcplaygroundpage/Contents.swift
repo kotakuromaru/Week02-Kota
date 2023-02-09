@@ -2,10 +2,13 @@ import UIKit
 import SwiftUI
 import PlaygroundSupport
 
+let imgBeach = UIImage(named: "beach.jpg")
+
 struct ContentView: View {
     var body: some View {
-        let beach = Image(uiImage: #imageLiteral(resourceName: "beach.jpg"))
-        
+//        let beach = Image(uiImage: #imageLiteral(resourceName: "beach.jpg"))
+        let beach = Image(uiImage: imgBeach!)
+
         beach
             .resizable()
             .aspectRatio(contentMode: .fill)
